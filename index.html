@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Own Web</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2fc55565ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Screenshot (697).png" width="150" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Technology</a></li>
+                    <li><a href="#portfolio">Sports</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Cyber Security(soon)</p>
+                <h1>Hi,I'm <span>Fauzi Laksamana</span><br>This Is My Official Website</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/ujii.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Fauzi Laksamana, I was born in Jakarta, 30 August 2005. I'm very interested in
+                        technology, especially computer, and networking. My hobbies are learning something about TI and
+                        watching American sports
+                        leagues.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">It's me</p>
+                        <p class="tab-links" onclick="opentab('hobby')">Hobby</p>
+                        <p class="tab-links" onclick="opentab('favorite')">Favorite</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Name</span><br>Fauzi Laksamana</li>
+                            <li><span>Age</span><br>18 Years old</li>
+                            <li><span>Gender</span><br>Male</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="hobby">
+                        <ul>
+                            <li><span>Study</span><br>I like to learn something new, of course about TI</li>
+                            <li><span>Draw</span><br>Draw something is fun, sometimes</li>
+                            <li><span>Coding</span><br>It's stressful, but actually fun</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="favorite">
+                        <ul>
+                            <li><span>Home Alone</span><br>My favorite movie all of time</li>
+                            <li><span>Red</span><br>Favorite color</li>
+                            <li><span>Royal Blood</span><br>their music was DOPE</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">About Tech</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h2>Cyber Security</h2>
+                    <p>Cyber Security is the art of protecting networks, devices, and data from unauthorized access or
+                        criminal use and the practice of ensuring confidentiality, integrity, and availability of
+                        information.</p>
+                    <a href="#">back</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-bug"></i>
+                    <h2>Computer Virus</h2>
+                    <p>A computer virus is a program that spreads by first infecting files or the system areas of a
+                        computer or network router's hard drive and then making copies of itself. Some viruses are
+                        harmless, others may damage data files, and some may destroy files.</p>
+                    <a href="#">back</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-network-wired"></i>
+                    <h2>Network</h2>
+                    <p> consists of two or more computers that are linked in order to share resources (such as printers
+                        and CDs), exchange files, or allow electronic communications. The computers on a network may be
+                        linked through cables, telephone lines, radio waves, satellites, or infrared light beams.</p>
+                    <a href="#">back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">About some sports</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/motogp.jpg" alt="">
+                    <div class="layer">
+                        <h3>Motogp</h3>
+                        <p>Grand Prix motorcycle racing is the highest class of motorcycle road racing events held on
+                            road circuits sanctioned by the Fédération Internationale de Motocyclisme (FIM).</p>
+                        <a href="https://www.motogp.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/images2.jpg" alt="">
+                    <div class="layer">
+                        <h3>National Basketball Association</h3>
+                        <p>The National Basketball Association (NBA) is a professional basketball league in North
+                            America composed of 30 teams (29 in the United States and 1 in Canada).</p>
+                        <a href="https://nba.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/nfban.jpg" alt="">
+                    <div class="layer">
+                        <h3>American Football</h3>
+                        <p>American football (referred to simply as football in the United States and Canada), also
+                            known as gridiron, is a team sport played by two teams of eleven players on a
+                            rectangular field with goalposts at each end.</p>
+                        <a href="https://www.nfl.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">Back To Top</a>
+        </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-brands fa-instagram"></i>@lulszecv</p>
+                    <p><i class="fas fa-phone-square-alt"></i>081276047375</p>
+                    <div class="social-icons">
+                        <a href="https://nba.com/"><i class="fa-solid fa-basketball"></i></a>
+                        <a href="https://www.nfl.com/"><i class="fa-solid fa-football"></i></a>
+                        <a href="https://www.motogp.com/"><i class="fa-solid fa-flag-checkered"></i></a>
+                        <a href="https://www.instagram.com/lulszecv/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://open.spotify.com/user/400szfk59f09j5n7ptgevuedb?si=2c300ce0d5874de2"><i
+                                class="fab fa-spotify"></i></a>
+                    </div>
+                    <a href="" class="btn btn2">Back</a>
+                    <div class="contact-right">
+                        <form action="https://formspree.io/f/xwkdwvga" method="POST">
+                            <label>
+                                Your email:
+                                <input type="email" name="email">
+                            </label>
+                            <label>
+                                Your message:
+                                <textarea name="message"></textarea>
+                            </label>
+                            <!-- your other form fields go here -->
+                            <button class="btn3" type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="copyright">
+                <div class="copyright">
+                    <p>Made by Fauzi Laksamana</p>
+                </div>
+            </div>
+
+            <script>
+
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
+
+                function opentab(tabname) {
+                    for (tablink of tablinks) {
+                        tablink.classList.remove("active-link");
+                    }
+                    for (tabcontent of tabcontents) {
+                        tabcontent.classList.remove("active-tab");
+                    }
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab");
+                }
+
+            </script>
+
+            <script>
+
+                var sidemenu = document.getElementById("sidemenu");
+
+                function openmenu() {
+                    sidemenu.style.right = "0";
+                }
+                function closemenu() {
+                    sidemenu.style.right = "-200px";
+                }
+
+
+
+            </script>
+</body>
+
+</html>
